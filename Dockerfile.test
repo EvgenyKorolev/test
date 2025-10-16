@@ -19,4 +19,4 @@ COPY strfabrictest.py .
 COPY substest.py .
 
 # Тесты запускаются в CI, не при сборке
-CMD ["python", "-m", "pytest", "test.py"]
+CMD ["python", "test.py"]
