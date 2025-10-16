@@ -42,7 +42,7 @@ jobs:
 
       - name: Run tests
         run: |
-          docker run --rm ${{ steps.build-test.outputs.image-id }} || exit 1
+          docker run --rm test-image:latest
 
       - name: Move cache
         run: |
