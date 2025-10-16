@@ -37,6 +37,7 @@ jobs:
           context: .
           file: ./Dockerfile.test
           load: true
+          tags: test-image:latest  # Явно указываем тег
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
 
