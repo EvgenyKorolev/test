@@ -9,6 +9,7 @@ from subscriber import (
     WriteToFile,
     PrintNull,
     PrintInErr,
+    SendToSQLite,
 )
 
 # Тесты для класса PrintOutput

@@ -3,6 +3,8 @@ from subscriber import SentToAllOutput
 from subscriber import WriteToFile
 from subscriber import PrintInErr
 from subscriber import PrintNull
+from subscriber import SendToSQLite
+
 
 #subscribers fabric
 class InputFabric:
@@ -13,6 +15,7 @@ class InputFabric:
 		self.registerFuncton(WriteToFile())
 		self.registerFuncton(PrintInErr())
 		self.registerFuncton(PrintNull())
+		self.registerFuncton(SendToSQLite())
 
 	def registerFuncton(self, func):
 

@@ -34,7 +34,6 @@ except ImportError:
         def run(self): pass
         def create(self): return TestStrat()
 
-
 from strfabric import StrFabric
 
 
